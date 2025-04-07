@@ -62,6 +62,30 @@ header {
     align-items: center;
 }
 
+.burger-button {
+    display: none;
+    color: #696767;
+    font-weight: 900;
+    font-size: clamp(0.5rem, 1vw, 200rem);
+
+    text-decoration: none;
+    transition: transform 0s, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border: 1px solid #696767;
+    border-radius: 5px;
+    padding: clamp(0.5rem, 0.8vh, 200rem) clamp(0.5rem, 1.5vw, 200rem);
+}
+
+.burger-button:hover {
+    cursor: pointer;
+    color: #f58711;
+    border-color: #f58711;
+}
+
+.burger-button:active {
+    color: #f58711;
+    border-color: #f58711;
+    transform: scale(0.95);
+}
 
 /*-------------------------------------HEADER BUTTON*/
 
@@ -69,13 +93,13 @@ header {
 .header-btn {
     color: #696767;
     font-weight: 900;
-    font-size: clamp(1rem, 1vw, 200rem);
+    font-size: clamp(0.5rem, 1vw, 200rem);
 
     text-decoration: none;
     transition: transform 0s, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     border: 1px solid #696767;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: clamp(0.5rem, 0.8vh, 200rem) clamp(0.5rem, 1.5vw, 200rem);
 }
 
 .header-btn:hover {
@@ -133,7 +157,7 @@ header {
 }
 
 .hero h2 {
-    font-size: clamp(1rem, 4vw, 200rem);
+    font-size: clamp(1.2rem, 4vw, 200rem);
     font-weight: 600;  
 }
 
@@ -143,7 +167,7 @@ header {
 
 .hero h3 {
     margin-top: clamp(1rem, 3vh, 200rem);
-    font-size: clamp(1rem, 2vw, 200rem);
+    font-size: clamp(1.1rem, 2vw, 200rem);
     font-weight: 600;
 }
 
@@ -156,19 +180,19 @@ main {
 }
 
 main h2 {
-    font-size: clamp(1rem, 3vw, 200rem);
+    font-size: clamp(1.3rem, 3vw, 200rem);
     font-weight: 400;
 
     padding-bottom: clamp(1rem, 3.5vh, 500rem);
 }
 
 main h3 {
-    font-size: clamp(1rem, 1.8vw, 200rem);
+    font-size: clamp(1.1rem, 1.8vw, 200rem);
     font-weight: 400;
 }
 
 main p {
-    font-size: clamp(0.5rem, 1.2vw, 200rem);
+    font-size: clamp(0.7rem, 1.2vw, 200rem);
     line-height: 1.5;
 }
 
@@ -178,7 +202,7 @@ main p {
 }
 
 .about p {
-    font-size: clamp(0.5rem, 1.5vw, 200rem);
+    font-size: clamp(0.7rem, 1.5vw, 200rem);
 }
 
 
@@ -286,18 +310,15 @@ footer {
 }
 
 @media (max-width: 430px) {
-    header {
-        padding: 0;
-    }
     .hero {
-        width: clamp(1rem, 80vw, 500rem);
-        padding: clamp(3rem, 10vh, 500rem) clamp(1rem, 2vw, 500rem);
+        width: clamp(0.5rem, 80vw, 500rem);
+        padding: clamp(2rem, 10vh, 500rem) clamp(1rem, 2vw, 500rem);
     }
     .main-nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 0;
+        display: none;
+    }
+    .burger-button {
+        display: block;
     }
     .about {
         padding-bottom: clamp(1rem, 5vh, 500rem);
