@@ -1,0 +1,314 @@
+/*-------------------------------------GLOBAL RESET--------------------------------------*/
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+    color: #696767;
+
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial Narrow, Arial, sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------------------------------HEADER STYLES--------------------------------------*/
+
+
+header {
+    width: 100%;
+    padding: 1.5vh 0;
+
+    display: flex;
+    justify-content: space-around;
+    gap: clamp(5px, 1vw, 500px);
+
+    background-color: #f3efefe8;
+}
+
+.logo {
+    width: clamp(100px, 8vw, 500px);
+    background: url(../img/logo.png) no-repeat center center/contain;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-around;
+    gap: clamp(5px, 6vw, 500px);
+    align-items: center;
+}
+
+
+/*-------------------------------------HEADER BUTTON*/
+
+
+.header-btn {
+    color: #696767;
+    font-weight: 900;
+    font-size: clamp(1rem, 1vw, 200rem);
+
+    text-decoration: none;
+    transition: transform 0s, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border: 1px solid #696767;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.header-btn:hover {
+    color: #f58711;
+    border-color: #f58711;
+}
+
+.header-btn:active {
+    color: #f58711;
+    border-color: #f58711;
+    transform: scale(0.95);
+}
+
+
+/*-------------------------------------NAVIGATION*/
+
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: clamp(5px, 3vw, 500px);
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    color: #696767;
+    font-weight: 900;
+    font-size: clamp(1rem, 1vw, 200rem);
+    transition: all 0.2s ease-in-out;
+    
+}
+.main-nav ul a:hover {
+    color: #f58711;
+}
+
+
+/*-------------------------------------HERO STYLES--------------------------------------*/
+
+
+.hero-cover {
+    width: 100%;
+    background: url(../img/cover.jpg) no-repeat center center/cover;
+}
+
+.hero {
+    width: clamp(5rem, 65vw, 500rem);
+    margin: 0 auto;
+    padding: clamp(5rem, 22vh, 500rem) clamp(1rem, 2vw, 500rem);
+
+    text-align: center;
+    background-color: #ffffff9c;
+    color: #696767;
+}
+
+.hero h2 {
+    font-size: clamp(1rem, 4vw, 200rem);
+    font-weight: 600;  
+}
+
+.hero span {
+    color: #f58711ba;
+}
+
+.hero h3 {
+    margin-top: clamp(1rem, 3vh, 200rem);
+    font-size: clamp(1rem, 2vw, 200rem);
+    font-weight: 600;
+}
+
+
+/*-------------------------------MAIN STYLES + SECTION ABOUT------------------------------*/
+
+
+main {
+    margin: clamp(5rem, 15vh, 500rem) clamp(0rem, 15vw, 500rem);
+}
+
+main h2 {
+    font-size: clamp(1rem, 3vw, 200rem);
+    font-weight: 400;
+
+    padding-bottom: clamp(1rem, 3.5vh, 500rem);
+}
+
+main h3 {
+    font-size: clamp(1rem, 1.8vw, 200rem);
+    font-weight: 400;
+}
+
+main p {
+    font-size: clamp(0.5rem, 1.2vw, 200rem);
+    line-height: 1.5;
+}
+
+.about {
+    text-align: center;
+    padding-bottom: clamp(1rem, 18vh, 500rem);
+}
+
+.about p {
+    font-size: clamp(0.5rem, 1.5vw, 200rem);
+}
+
+
+/*-------------------------------------SECTION SERVICES--------------------------------------*/
+
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    text-align: left;
+}
+
+.services i {
+    font-size: clamp(0.5rem, 3vw, 200rem);
+    color: #f58711ba;
+ 
+    padding-top: clamp(1rem, 3vh, 200rem);
+}
+
+.services span {
+    color: #f58711ba;
+    font-weight: 600;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icon-lineup {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1rem, 2vw, 200rem);
+   
+}
+
+
+/*-------------------------------------BOTTOM BUTTON*/
+
+
+.bottom-btn-container {
+    text-align: center;
+    padding-top: clamp(5rem, 10vh, 200rem);
+}
+.bottom-btn {
+    font-size: clamp(0.5rem, 1.5vw, 200rem);
+    color: #fff;
+    background-color: #f58711ba;
+    text-decoration: none;
+
+    padding: clamp(0.2rem, 2vh, 200rem) clamp(0.5rem, 3vw, 200rem);
+    border-radius: 10px;
+
+    transition: all 0.2s ease;
+}
+
+.bottom-btn:hover {
+    background-color: #f58711;
+}
+
+.bottom-btn:active {
+    color: #f58711;
+    transform: scale(0.95);
+}
+
+
+/*-------------------------------------FOOTER STYLES--------------------------------------*/
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 200rem);
+
+    padding: clamp(1rem, 8vh, 200rem) 0 clamp(1rem, 5vh, 200rem);
+
+    background-color: #f3efefe8;
+}
+.socials, .copy {
+    font-size: clamp(0.5rem, 1.5vw, 200rem);
+}
+
+
+/*-------------------------------------RESPONSIVITY--------------------------------------*/
+
+
+@media (max-width: 1024px) {
+    .about {
+        padding-bottom: clamp(1rem, 5vh, 500rem);
+    }
+    main {
+        margin: clamp(5rem, 8vh, 500rem) clamp(0rem, 15vw, 500rem);
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        padding: 0;
+    }
+    .hero {
+        width: clamp(1rem, 80vw, 500rem);
+        padding: clamp(3rem, 10vh, 500rem) clamp(1rem, 2vw, 500rem);
+    }
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0;
+    }
+    .about {
+        padding-bottom: clamp(1rem, 5vh, 500rem);
+    }
+    main {
+        margin: clamp(3rem, 5vh, 500rem) clamp(0rem, 8vw, 500rem);
+    }
+    .bottom-btn-container {
+        padding-top: clamp(3rem, 5vh, 200rem);
+    }
+    footer {
+        padding: clamp(1rem, 5vh, 200rem) clamp(1rem, 5vh, 200rem);
+    }
+}
